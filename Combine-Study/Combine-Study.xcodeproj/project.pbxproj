@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773322D42F9F07A2000D0CDD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 773322D32F9F07A2000D0CDD /* Kingfisher */; };
 		77718D392F9E709D00ECA41D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77718D382F9E709D00ECA41D /* SnapKit */; };
 		77718D3C2F9E70A700ECA41D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 77718D3B2F9E70A700ECA41D /* Then */; };
 /* End PBXBuildFile section */
@@ -19,7 +20,7 @@
 		77718BEA2F9A82CB00ECA41D /* Exceptions for "Combine-Study" folder in "Combine-Study" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resource/Info.plist,
 			);
 			target = 77718BD72F9A82C900ECA41D /* Combine-Study */;
 		};
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773322D42F9F07A2000D0CDD /* Kingfisher in Frameworks */,
 				77718D392F9E709D00ECA41D /* SnapKit in Frameworks */,
 				77718D3C2F9E70A700ECA41D /* Then in Frameworks */,
 			);
@@ -87,6 +89,7 @@
 			packageProductDependencies = (
 				77718D382F9E709D00ECA41D /* SnapKit */,
 				77718D3B2F9E70A700ECA41D /* Then */,
+				773322D32F9F07A2000D0CDD /* Kingfisher */,
 			);
 			productName = "Combine-Study";
 			productReference = 77718BD82F9A82C900ECA41D /* Combine-Study.app */;
@@ -119,6 +122,7 @@
 			packageReferences = (
 				77718D372F9E709D00ECA41D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				77718D3A2F9E70A700ECA41D /* XCRemoteSwiftPackageReference "Then" */,
+				773322D22F9F07A2000D0CDD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 77718BD92F9A82C900ECA41D /* Products */;
@@ -159,7 +163,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Combine-Study/Info.plist";
+				INFOPLIST_FILE = "Combine-Study/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -173,7 +177,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -189,7 +193,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Combine-Study/Info.plist";
+				INFOPLIST_FILE = "Combine-Study/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -203,7 +207,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,6 +358,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		773322D22F9F07A2000D0CDD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.1;
+			};
+		};
 		77718D372F9E709D00ECA41D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -373,6 +385,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		773322D32F9F07A2000D0CDD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 773322D22F9F07A2000D0CDD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		77718D382F9E709D00ECA41D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 77718D372F9E709D00ECA41D /* XCRemoteSwiftPackageReference "SnapKit" */;
